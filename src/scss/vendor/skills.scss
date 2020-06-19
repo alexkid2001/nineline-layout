@@ -1,0 +1,40 @@
+.skills {
+
+	&__wrap {
+		padding: 28px 20px 36px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -20px;
+		margin-top: -23px;
+
+
+		& > * {
+			width: calc(100% / 4 - 20px);
+			margin-left: 20px;
+			margin-top: 37px;
+		}
+	}
+
+	@media screen and (max-width: 639px) {
+		&__list {
+
+			& > * {
+				width: calc(100% / 3 - 20px);
+			}
+		}
+
+	}
+
+	@media screen and (max-width: 479px) {
+		&__list {
+
+			& > * {
+				width: calc(100% / 2 - 20px);
+			}
+		}
+
+	}
+}

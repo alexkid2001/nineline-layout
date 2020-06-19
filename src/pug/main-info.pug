@@ -1,0 +1,17 @@
+include mixins/input
+
+.main-info
+	.main-info__wrap
+		.main-info__avatar
+			label
+				input.avatar__input(type="file" accept=".jpg, .jpeg, .png")
+				img.avatar__preview(src="./images/avatar-default.jpg")
+
+		.main-info__inputs-list
+			+input("Александр",  "Имя")
+			+input("10.01.1981",  "Дата рождения")
+			+input("Донецк",  "Город")
+			+input("+79587568833",  "Контактные данные")
+
+		.main-info__stamp
+			img(src="./images/stamp.png")

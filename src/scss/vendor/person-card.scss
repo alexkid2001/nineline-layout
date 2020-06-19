@@ -1,0 +1,17 @@
+.person-card {
+	width: 660px;
+	margin: 60px auto;
+	background-color: $color-white;
+
+	& > * {
+		background: url("../images/bg.png");
+		width: 100%;
+		border-bottom: 2px solid $color-gallery;
+	}
+
+	@media screen and (max-width: 679px) {
+		margin-left: 15px;
+		margin-right: 15px;
+		width: auto;
+	}
+}

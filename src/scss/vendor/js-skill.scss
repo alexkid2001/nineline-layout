@@ -1,0 +1,47 @@
+.js-skill {
+
+	&__wrap {
+		padding: 58px 20px 50px;
+		display: flex;
+
+		& > * {
+			width: calc(50% - 10px);
+		}
+	}
+
+	&__chart {
+	}
+
+	&__content {
+		margin-left: 20px;
+	}
+
+	&__title {
+		line-height: 1.333;
+		padding-top: 6px;
+	}
+
+	&__lavel {
+		font-weight: 800;
+		font-size: 50px;
+		color:$color-cerulean;
+		line-height: 1.6;
+	}
+
+	@media screen and (max-width: 679px) {
+		&__wrap {
+			flex-direction: column;
+			align-items: center;
+
+			& > * {
+				width: auto;
+			}
+		}
+
+		&__content {
+			margin-top: 20px;
+			margin-left: 0px;
+			text-align: center;
+		}
+	}
+}

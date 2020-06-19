@@ -1,0 +1,17 @@
+@import "../../node_modules/normalize.css/normalize";
+
+body {
+	font-family: $font-family-roboto;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.834;
+	background-color: $color-gallery;
+}
+
+@import "vendor/title";
+@import "vendor/person-card";
+@import "vendor/main-info";
+@import "vendor/input";
+@import "vendor/checkbox";
+@import "vendor/skills";
+@import "vendor/js-skill";

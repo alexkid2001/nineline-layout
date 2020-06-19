@@ -1,0 +1,22 @@
+.input {
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid $color-mine-shaft;
+	background-color: transparent;
+	outline: none;
+	padding: 8px 2px;
+	letter-spacing: 1.3px;
+	color: $color-dove-gray;
+	text-transform: uppercase;
+	transition: all 0.3s;
+
+
+	&::placeholder {
+		font-size: inherit;
+		color: $color-dove-gray;
+	}
+
+	&:focus {
+		border-color: $color-cerulean;
+	}
+}

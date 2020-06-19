@@ -1,0 +1,10 @@
+mixin checkbox(title, isActive)
+	label.checkbox
+		if isActive
+			input(type="checkbox" checked)
+		else
+			input(type="checkbox")
+		span.checkbox__custom
+		if title
+			span.checkbox__title
+				| #{title}
